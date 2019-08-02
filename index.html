@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>SmartUP Group</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="HTML5 website template">
+  <meta name="keywords" content="global, template, html, sass, jquery">
+  <meta name="author" content="Bucky Maler">
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.css">
+
+  <!-- location -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+
+</head>
+
+<body>
+
+  <!-- notification for small viewports and landscape oriented smartphones -->
+  <div class="device-notification">
+    <a class="device-notification--logo" href="#0">
+      <img src="assets/img/logo.png" alt="Global">
+      <p>SmartUP</p>
+    </a>
+    <p class="device-notification--message">SmartUP has so much to offer that we must request you orient your device to
+      portrait or find a larger screen.</p>
+  </div>
+
+  <div class="perspective effect-rotate-left">
+    <div class="container">
+      <div class="outer-nav--return"></div>
+      <div id="viewport" class="l-viewport">
+        <div class="l-wrapper">
+          <header class="header">
+            <a class="header--logo" href="#0">
+              <img src="assets/img/logo.png" alt="Global">
+              <p>Smart<span>UP</span></p>
+            </a>
+            <button class="header--cta cta">SmartUP Group</button>
+            <div class="header--nav-toggle">
+              <span></span>
+            </div>
+          </header>
+          <nav class="l-side-nav">
+            <ul class="side-nav">
+              <li class="is-active"><span>Home</span></li>
+              <li><span>Startups</span></li>
+              <li><span>We want</span></li>
+              <li><span>Contact</span></li>
+              <!-- <li><span>Hire us</span></li> -->
+            </ul>
+          </nav>
+          <ul class="l-main-content main-content">
+            <li class="l-section section section--is-active">
+              <div class="intro">
+                <div class="intro--banner">
+                  <h1>Build<br>your future<br>with us</h1>
+                  <button id="cta" class="cta">SmartUP
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
+                      style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                      <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                        <path
+                          d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z" />
+                      </g>
+                    </svg>
+                    <span class="btn-background"></span>
+                  </button>
+                  <img src="assets/img/businessman.png" alt="Welcome">
+                </div>
+                <div class="intro--options">
+                  <a href="#0">
+                    <h3>START-UPS</h3>
+                    <p>With a total budget of €2.7bn for 2018-20, the European Commission is funding innovators,
+                      entrepreneurs and small companies.</p>
+                  </a>
+                  <a href="#0">
+                    <h3>INVESTORS</h3>
+                    <p>Through our channel partners, we offer access to the Pan-European VC Fund-of-Funds Programme as
+                      well as to other strategic equity investment programmes.</p>
+                  </a>
+                  <a href="#0">
+                    <h3>ACCELERATORS</h3>
+                    <p>Unique programmes from EU Startup Services to provide your startup with a running start.</p>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="l-section section">
+              <div class="work">
+                <h2>Selected Startups</h2>
+                <div class="work--lockup">
+                  <ul class="slider">
+                    <li class="slider--item slider--item-left">
+                      <a href="#0">
+                        <div class="slider--item-image">
+                          <img src="assets/img/work-victory.jpg" alt="Victory">
+                        </div>
+                        <p class="slider--item-title">Astral Design</p>
+                        <p class="slider--item-description">Astral designing is leaving the realm of science fiction and
+                          slowly becoming an everyday reality.</p>
+                      </a>
+                    </li>
+                    <li class="slider--item slider--item-center">
+                      <a href="#0">
+                        <div class="slider--item-image">
+                          <img src="assets/img/work-metiew-smith.jpg" alt="Metiew and Smith">
+                        </div>
+                        <p class="slider--item-title">Business-plan &amp; Service</p>
+                        <p class="slider--item-description">The problem with pitching a business to investors is that
+                          they all want to see a business plan.</p>
+                      </a>
+                    </li>
+                    <li class="slider--item slider--item-right">
+                      <a href="#0">
+                        <div class="slider--item-image">
+                          <img src="assets/img/work-alex-nowak.jpg" alt="Alex Nowak">
+                        </div>
+                        <p class="slider--item-title">3D-printing Services</p>
+                        <p class="slider--item-description">3D printing is leaving the realm of science fiction and
+                          slowly becoming an everyday reality.</p>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="slider--prev">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
+                      style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                      <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                        <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z" />
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="slider--next">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
+                      style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                      <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                        <path
+                          d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z" />
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="l-section section">
+              <div class="about">
+                <div class="about--banner">
+                  <h2>What<br><span>qualities</span><br>your startup<br>should have</h2>
+                  <!-- <a href="#0">Career
+                    <span>
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
+                        style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                        <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                          <path
+                            d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z" />
+                        </g>
+                      </svg>
+                    </span>
+                  </a> -->
+                  <img src="assets/img/about-visual.png" alt="About Us">
+                </div>
+                <div class="about--options">
+                  <a href="#0">
+                    <h3>Winner</h3>
+                  </a>
+                  <a href="#0">
+                    <h3>Creative</h3>
+                  </a>
+                  <a href="#0">
+                    <h3>Unique</h3>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="l-section section">
+              <div class="contact">
+
+
+                <div class="contact--lockup ">
+                  <!-- interactive map -->
+                  <div id="map">
+                    <div class="grayer"></div>
+                  </div>
+                  <div class="modal">
+                    <div class="modal--information">
+                      <p>Ташкент, ул. Афросиаб 4</p>
+                      <a href="mailto:info@osg.uz">info@osg.uz</a>
+                      <a href="tel:+998781470008">+998(78)147-00-08</a>
+                      <a href="tel:+998983090008">+998(98)309-00-08</a>
+                    </div>
+                    <ul class="modal--options">
+                      <li>
+                        <a href="https://www.facebook.com/OnlineServiceGroup/">
+                          <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a href="https://www.instagram.com/osg_uz/">
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.instagram.com/osg_uz/">
+                          <i class="fab fa-telegram-plane"></i>
+                        </a>
+                      </li>
+                      <li><a href="mailto:ouremail@gmail.com">Contact Us</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="l-section section">
+
+              <div class="hire">
+                <h2>You want us to do</h2>
+                checkout formspree.io for easy form setup
+                <form class="work-request">
+                  <div class="work-request--options">
+                    <span class="options-a">
+                      <input id="opt-1" type="checkbox" value="app design">
+                      <label for="opt-1">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 111"
+                          style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                          <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                            <path
+                              d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z" />
+                          </g>
+                        </svg>
+                        App Design
+                      </label>
+                      <input id="opt-2" type="checkbox" value="graphic design">
+                      <label for="opt-2">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 111"
+                          style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                          <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                            <path
+                              d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z" />
+                          </g>
+                        </svg>
+                        Graphic Design
+                      </label>
+                      <input id="opt-3" type="checkbox" value="motion design">
+                      <label for="opt-3">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 111"
+                          style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                          <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                            <path
+                              d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z" />
+                          </g>
+                        </svg>
+                        Motion Design
+                      </label>
+                    </span>
+                    <span class="options-b">
+                      <input id="opt-4" type="checkbox" value="ux design">
+                      <label for="opt-4">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 111"
+                          style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                          <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                            <path
+                              d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z" />
+                          </g>
+                        </svg>
+                        UX Design
+                      </label>
+                      <input id="opt-5" type="checkbox" value="webdesign">
+                      <label for="opt-5">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 111"
+                          style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                          <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                            <path
+                              d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z" />
+                          </g>
+                        </svg>
+                        Webdesign
+                      </label>
+                      <input id="opt-6" type="checkbox" value="marketing">
+                      <label for="opt-6">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 111"
+                          style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                          <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                            <path
+                              d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z" />
+                          </g>
+                        </svg>
+                        Marketing
+                      </label>
+                    </span>
+                  </div>
+                  <div class="work-request--information">
+                    <div class="information-name">
+                      <input id="name" type="text" spellcheck="false">
+                      <label for="name">Name</label>
+                    </div>
+                    <div class="information-email">
+                      <input id="email" type="email" spellcheck="false">
+                      <label for="email">Email</label>
+                    </div>
+                  </div>
+                  <input type="submit" value="Send Request">
+                </form>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <ul class="outer-nav">
+      <li class="is-active">Home</li>
+      <li>Startups</li>
+      <li>We want</li>
+      <li>Contact</li>
+      <!-- <li>Hire us</li> -->
+    </ul>
+  </div>
+
+  <!-- <script>
+    var mymap = L.map('mapid').setView([41.30249049553614, 69.26867544651031], 17);
+    var osgIcon = new LeafIcon({iconUrl: '/assets/img/marker.png'});
+
+    L.tileLayer('https://tiles.wmflabs.org/hikebike/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(mymap);
+
+    L.marker([41.30249049553614, 69.26867544651031]).addTo(mymap).openPopup();
+  </script>
+  
+  <script>
+    $(".leaflet-control-zoom-in").css("background-color", "#282828");
+    $(".leaflet-control-zoom-out").css("background-color", "#282828");
+    $(".leaflet-control-zoom-in").css("color", "#D55429");
+    $(".leaflet-control-zoom-out").css("color", "#D55429");
+    $(".leaflet-bottom.leaflet-right").css("display", "none");
+  </script> -->
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+  <script src="assets/js/functions-min.js"></script>
+
+
+  <script>
+    $("#cta").click(function () {
+      window.open("https://docs.google.com/forms/d/e/1FAIpQLSeCk22LhHvdGl2ypa1nowJ-9EciGziIZ3d4TWh7qw7WGrzRMw/viewform?usp=sf_link");
+    })
+  </script>
+
+  <script>
+    // Initialize and add the map
+    function initMap() {
+      let map = new google.maps.Map(document.getElementById('map'), {
+        center: { lat: 41.30242601644889, lng: 69.26869153976439 },
+        // disableDefaultUI: true,
+        scrollwheel: false,
+        zoom: 18,
+        styles: [
+          { elementType: 'geometry', stylers: [{ color: '#242f3e' }] },
+          { elementType: 'labels.text.stroke', stylers: [{ color: '#242f3e' }] },
+          { elementType: 'labels.text.fill', stylers: [{ color: '#746855' }] },
+
+
+          {
+            "featureType": "landscape.man_made",
+            "elementType": "geometry.fill",
+            "stylers": [
+              {
+                "hue": "#273840"
+              },
+              {
+                "visibility": "on"
+              }
+            ]
+          },
+
+
+          {
+            featureType: 'administrative.locality',
+            elementType: 'labels.text.fill',
+            stylers: [{ color: '#d59563' }]
+          },
+          {
+            featureType: 'poi',
+            elementType: 'labels.text.fill',
+            stylers: [{ color: '#d59563' }]
+          },
+          {
+            featureType: 'poi.park',
+            elementType: 'geometry',
+            stylers: [{ color: '#263c3f' }]
+          },
+          {
+            featureType: 'poi.park',
+            elementType: 'labels.text.fill',
+            stylers: [{ color: '#6b9a76' }]
+          },
+          {
+            featureType: 'road',
+            elementType: 'geometry',
+            stylers: [{ color: '#38414e' }]
+          },
+          {
+            featureType: 'road',
+            elementType: 'geometry.stroke',
+            stylers: [{ color: '#212a37' }]
+          },
+          {
+            featureType: 'road',
+            elementType: 'labels.text.fill',
+            stylers: [{ color: '#9ca5b3' }]
+          },
+          {
+            featureType: 'road.highway',
+            elementType: 'geometry',
+            stylers: [{ color: '#746855' }]
+          },
+          {
+            featureType: 'road.highway',
+            elementType: 'geometry.stroke',
+            stylers: [{ color: '#1f2835' }]
+          },
+          {
+            featureType: 'road.highway',
+            elementType: 'labels.text.fill',
+            stylers: [{ color: '#f3d19c' }]
+          },
+          {
+            featureType: 'transit',
+            elementType: 'geometry',
+            stylers: [{ color: '#2f3948' }]
+          },
+          {
+            featureType: 'transit.station',
+            elementType: 'labels.text.fill',
+            stylers: [{ color: '#d59563' }]
+          },
+          {
+            featureType: 'water',
+            elementType: 'geometry',
+            stylers: [{ color: '#17263c' }]
+          },
+          {
+            featureType: 'water',
+            elementType: 'labels.text.fill',
+            stylers: [{ color: '#515c6d' }]
+          },
+          {
+            featureType: 'water',
+            elementType: 'labels.text.stroke',
+            stylers: [{ color: '#17263c' }]
+          }
+        ],
+        zoomControlOptions: {
+          position: google.maps.ControlPosition.TOP_LEFT
+        },
+        streetViewControl: false,
+      });
+
+      let icon = 'assets/img/marker.png';
+      let marker = new google.maps.Marker({
+        position: { lat: 41.30242601644889, lng: 69.26869153976439 },
+        icon: icon,
+        map: map,
+        draggable: false,
+        title: 'Online Service Group',
+      });
+
+      marker.addListener('click', function () {
+        if (infowindow.anchor && infowindow.anchor.visible)
+          infowindow.close()
+        else
+          infowindow.open(map, marker);
+      });
+
+      let infowindow = new google.maps.InfoWindow({
+        content: `<div style="color: #000"><h4>Online Service Group</h4> <b>Создание cайтов в Ташкенте / Маркетинг в социальных сетях (SMM)<br>и Поисковая оптимизация (SEO) от Online Service Group - OSG.uz</b></div>`
+      });
+    }
+  </script>
+
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHq1EvF4Vn8gNYeNGg0V7o5v8vkFFLVRE&callback=initMap"
+    type="text/javascript"></script>
+
+
+
+
+
+  <!-- <script>
+    var map = 'mapid';  // you could encode the css path itself to generate id..
+    if (!document.getElementById(cssId)) {
+      var head = document.getElementsByTagName('head')[0];
+      var link = document.createElement('link');
+      link.id = map;
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = '/assets/css/map.css';
+      link.media = 'all';
+      head.appendChild(link);
+    }
+  </script> -->
+
+
+  <script>
+    $(function () {
+      let isFullScreen = 1;
+      var i = 1;
+      while (i < 100000) {
+        (function () {
+
+          setTimeout(function () {
+
+            $("button[title=\"Включить полноэкранный режим\"] img").click(function () {
+              isFullScreen = isFullScreen * (-1);
+              console.log('click');
+            })
+
+            $(".gm-style-cc").css("display", "none");
+
+            $('body').on("mouseover", '#map', function (event) {
+            });
+
+
+            $(".gm-control-active").css("background-color", "#282828");
+            $("button[title=\"Увеличить\"] img").attr("src", "assets/img/plus.png");
+            $("button[title=\"Уменьшить\"] img").attr("src", "assets/img/minus.png");
+            $("a[title=\"Открыть эту область в Google Картах (в новом окне)\"] img").attr("src", "assets/img/google.png");
+            $("a[title=\"Открыть эту область в Google Картах (в новом окне)\"] img").css("width", "100px");
+            $("a[title=\"Открыть эту область в Google Картах (в новом окне)\"] img").css("height", "15px");
+            if (isFullScreen === 1) {
+              $("button[title=\"Включить полноэкранный режим\"] img").attr("src", "assets/img/full-screen.png");
+            }
+            else
+              if (isFullScreen !== 1) {
+                $("button[title=\"Включить полноэкранный режим\"] img").attr("src", "assets/img/small-screen.png");
+              }
+
+            // console.log($(".gmnoprint>*>*>*"));
+            // $(".gmnoprint>div>div").css("background-color", "#282828");
+            // $(".gmnoprint>div>div").css("height", "");
+
+            $("div[title=\"Показать спутниковую карту\"]").css("background-color", "#282828");
+            $("div[title=\"Показать спутниковую карту\"]:hover").css("background-color", "#282828");
+
+            $(".gmnoprint>*").css("background-color", "#282828");
+            $(".gmnoprint>*").css("color", "#D55429");
+            $(".gmnoprint>*>*").css("background-color", "#282828");
+            $(".gmnoprint>*>*").css("color", "#d55429");
+            $(".gmnoprint>*>*>*").css("background-color", "#282828");
+            $(".gmnoprint>*>*>*").css("color", "#d55429");
+            $(".gmnoprint>*>*>*>*").css("background-color", "#282828");
+            $(".gmnoprint>*>*>*>*").css("color", "#d55429");
+            $(".gmnoprint>*>*>*>*>*").css("background-color", "#282828");
+            $(".gmnoprint>*>*>*>*>*").css("color", "#d55429");
+            $(".gmnoprint>*>*>*>*>*>*").css("background-color", "#282828");
+            $(".gmnoprint>*>*>*>*>*>*").css("color", "#d55429");
+            // console.log("iteration" + i);
+          }, 1 * i)
+
+        })()
+        i++;
+      }
+      setTimeout(destroyEverything, 3000);
+
+
+
+
+    })
+  </script>
+
+</body>
+
+</html>
